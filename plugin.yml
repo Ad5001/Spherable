@@ -1,0 +1,31 @@
+---
+#      ____          _                        _      _       
+#     / ___|  _ __  | |__    ___  _ __  __ _ | |__  | |  ___ 
+#     \___ \ | '_ \ | '_ \  / _ \| '__|/ _` || '_ \ | | / _ \
+#      ___) || |_) || | | ||  __/| |  | (_| || |_) || ||  __/
+#     |____/ | .__/ |_| |_| \___||_|   \__,_||_.__/ |_| \___|
+#            |_|                                             
+# 
+# Spheres world generator. A new survival challenge.
+# @author Ad5001 <mail@ad5001.eu>
+# @copyright (C) 2017 Ad5001
+# @license NTOSL (View LICENSE.md)
+# @package Spherical
+# @version 1.0.0
+# @link https://download.ad5001.eu/en/view.php?name=Spherable&src=github
+name: Spherable
+description: A spheres world generator. A new survival challenge.
+author:  Ad5001
+version: 1.0
+api: [3.0.0-ALPHA7]
+main: Ad5001\Spherable\Main
+website: "https://download.ad5001.eu/en/view.php?name=Spherable&src=github"
+psmimplements: true
+permissions: 
+ spherable.cmd.createworld:
+  default: op
+ spherable.cmd.tp:
+  default: op
+ spherable.cmd.join:
+  default: true
+...
