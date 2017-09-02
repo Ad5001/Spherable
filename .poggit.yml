@@ -4,4 +4,5 @@ branches:
 projects:
   Spherable:
     path: ""
+    icon: icon.png
 ...
