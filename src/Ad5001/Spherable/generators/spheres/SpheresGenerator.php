@@ -196,7 +196,7 @@ class SpheresGenerator extends Generator {
 		],
 		[
 			[Block::DIAMOND_ORE, 0, 10],
-			[Block::NETHER_BRICKS, 0, 90],
+			[Block::NETHER_BRICK_BLOCK, 0, 90],
 		],
 		[
 			[Block::DIAMOND_ORE, 0, 10],
