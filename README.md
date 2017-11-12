@@ -1,4 +1,4 @@
-# Spherable
+# Spherable - [![](https://poggit.pmmp.io/shield.approved/Spherable)](https://poggit.pmmp.io/p/Spherable)
 A spheres world generator. A new survival challenge.
     
     
