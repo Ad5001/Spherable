@@ -1,3 +1,4 @@
+## This repository was moved to [git.ad5001.eu](https://git.ad5001.eu/Ad5001/Spherable)
 # Spherable - [![](https://poggit.pmmp.io/shield.approved/Spherable)](https://poggit.pmmp.io/p/Spherable)
 A spheres world generator. A new survival challenge.
     
