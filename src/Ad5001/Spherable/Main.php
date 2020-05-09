@@ -25,6 +25,7 @@ use pocketmine\command\Command;
 use pocketmine\event\Listener;
 use pocketmine\plugin\PluginBase;
 use pocketmine\level\generator\Generator;
+use pocketmine\level\generator\GeneratorManager;
 use pocketmine\Server;
 use pocketmine\Player;
 use pocketmine\level\Position;
@@ -46,7 +47,7 @@ class Main extends PluginBase implements Listener{
 	 * @return void
 	 */
 	public function onEnable(){
-		Generator::addGenerator(SpheresGenerator::class, "spheres");
+		GeneratorManager::addGenerator(SpheresGenerator::class, "spheres");
 		$this->getServer()->getCommandMap()->register("sphgen", new sphgenCommand($this));
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}

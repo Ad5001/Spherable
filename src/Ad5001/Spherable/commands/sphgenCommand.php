@@ -26,6 +26,7 @@ use pocketmine\level\Position;
 use pocketmine\block\Block;
 use pocketmine\math\Vector3;
 use pocketmine\entity\Effect;
+use pocketmine\entity\EffectInstance;
 
 use Ad5001\Spherable\Main;
 use Ad5001\Spherable\generators\spheres\SpheresGenerator;
@@ -81,7 +82,7 @@ class sphgenCommand extends Command{
                 }
                 if(Server::getInstance()->getLevelByName($args[1])->getProvider()->getGenerator() == "spheres"){
                     $sender->teleport(new Position(264, 256, 264,Server::getInstance()->getLevelByName($args[1])));
-                    $effect = Effect::getEffectByName("resistance");
+                    $effect = new EffectInstance(Effect::getEffectByName("resistance"));
                     $effect->setDuration(600);
                     $effect->setAmplifier(99);
 					$effect->setVisible(false);
