@@ -241,7 +241,7 @@ class SpheresGenerator extends Generator {
 	 * @param		Random				$random
 	 * @return		void
 	 */
-	public function init(ChunkManager $level, Random $random) {
+	public function init(ChunkManager $level, Random $random): void {
 		$this->level = $level;
 		$this->random = $random;
 		
@@ -277,7 +277,7 @@ class SpheresGenerator extends Generator {
 	 * @param int $chunkZ
 	 * @return void
 	 */
-	public function generateChunk(int $chunkX, int $chunkZ){
+	public function generateChunk(int $chunkX, int $chunkZ): void{
 		// Leave blank, planets will be generated later
 		$chunk = $this->level->getChunk($chunkX, $chunkZ);
 		for($x = 0; $x < 16; $x++) {
@@ -297,7 +297,7 @@ class SpheresGenerator extends Generator {
 	 * @param int $chunkZ
 	 * @return void
 	 */
-	public function populateChunk(int $chunkX, int $chunkZ){
+	public function populateChunk(int $chunkX, int $chunkZ): void{
 		$this->random->setSeed(0xdeadbeef ^ ($chunkX << 8) ^ $chunkZ ^ $this->level->getSeed());
 		$chunk = $this->level->getChunk($chunkX, $chunkZ);
 		$count = $this->random->nextRange(1, 4);
